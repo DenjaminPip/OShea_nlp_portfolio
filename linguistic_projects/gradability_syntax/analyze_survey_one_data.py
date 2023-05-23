@@ -10,16 +10,18 @@ def get_data_from_survey(survey_data: pd.DataFrame, path: str = "data/faultless_
     category_order = survey_data.groupby(['category', 'type'])['percent_yes'].mean().sort_values(ascending=False)
     category_order = category_order.reset_index()
 
-    plt.figure(figsize=(12, 10))
+    plt.figure(figsize=(15, 15))
 
-    sns.barplot(data=category_order,
+    sns.set(font_scale=1.75)
+
+    ax = sns.barplot(data=category_order,
                 x='category',
                 y='percent_yes',
                 hue="type",
-                dodge=False,
                 order=category_order['category'].unique()
                 )
 
+    ax.set_xticklabels(ax.get_xticklabels(), rotation=40)
     plt.xlabel("Adjective Class")
     plt.ylabel("Mean Rate of Faultless Disagreement (Percentage)")
     plt.title("Predicted Adjective Order based on Mean Faultless Disagreement Rate")
