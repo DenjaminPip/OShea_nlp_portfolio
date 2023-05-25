@@ -1,2 +1,0 @@
-# Linguistic Projects
- Here you can find the projects I have completed in my linguistics courses. These projects all utilized Python in some way, and include a thorough background as to the nature of the data analysis.
