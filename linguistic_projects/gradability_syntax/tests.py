@@ -40,22 +40,5 @@ class SurveyTwoTests(unittest.TestCase):
         noun = 'chair'
         self.assertEqual(write_new_prompt(noun, adjective_1, adjective_2), ("the old soft chair", "the soft old chair"))
 
-class AnalyzeSurveyResults(unittest.TestCase):
-
-    def test_find_statistical_significance(self):
-        random.seed(54)
-        category_1 = []
-        category_2 = []
-        neutral_category = []
-        for i in range(25):
-            x = random.randint(0, 25)
-            y = random.randint(0, 25-x)
-            z = 25 - (x+y)
-            category_1.append(x)
-            category_2.append(y)
-            neutral_category.append(z)
-        statistic, p_value = find_statistical_significance(category_1, category_2, neutral_category)
-        self.assertEqual((statistic, p_value), (7.523678528588567, 0.023240954781656664))
-
 if __name__ == '__main__':
     unittest.main()

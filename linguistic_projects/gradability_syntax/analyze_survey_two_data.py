@@ -2,7 +2,7 @@ from make_survey_one import open_sheet
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-from scipy.stats import kruskal, wilcoxon, mannwhitneyu
+from scipy.stats import kruskal
 from statistics import stdev as standard_deviation
 
 def get_scale_data(survey_data: pd.DataFrame, path: str = "data/word_order_results.jpg"):
@@ -37,27 +37,13 @@ def get_scale_data(survey_data: pd.DataFrame, path: str = "data/word_order_resul
     # Show the plot
     plt.savefig(path)
 
-def find_statistical_significance(category_1: list, category_2: list, neutral_category: list) -> tuple:
-    """
-        Perform the Kruskal-Wallis test to find statistical significance.
-
-        :param category_1: list
-            List of preference ratings for the category 1.
-        :param neutral_category: list
-            List of neutral preference ratings.
-        :param category_2: list
-            List of preference ratings for the category 2.
-        ":return: tuple
-            The test statistic and p_value
-        """
-    return kruskal(category_1, neutral_category, category_2)
-def average(values: list) -> float:
-    return round(sum(values) / len(values), 2)
-
 if __name__ == '__main__':
     link = "https://docs.google.com/spreadsheets/d/1jxXRnLCp8mHE2MvJ5C8CwXuzFEj36_2tT0MFAaCtBp4/edit#gid=0"
     survey_sheet_name = "Word Order Preference"
     survey_data = open_sheet(link, survey_sheet_name)
+
+    average = lambda values: round(sum(values) / len(values), 2)
+    find_statistical_significance = lambda category_1, category_2, neutral_category: kruskal(category_1, neutral_category, category_2)
 
     # Participants that preferred the alternate word order
     alt_preference = survey_data['1'].tolist() + survey_data['2'].tolist()
