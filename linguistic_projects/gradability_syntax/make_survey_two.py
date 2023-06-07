@@ -37,7 +37,7 @@ check_dependencies(dependencies_file)
 
 import pandas as pd
 import random
-from make_survey_one import open_sheet, new_data
+from make_survey_one import write_new_sheet, open_sheet, new_data
 
 def write_new_prompt(noun: str, adjective_1: str, adjective_2: str) -> tuple:
     """
@@ -104,4 +104,4 @@ if __name__ == '__main__':
     # Run the program and write to new Google Sheet
     survey_data = get_survey_data(nouns, age_adjectives, physical_adjectives, n=10, random_seed=58)
     survey_data = pd.DataFrame(survey_data).drop_duplicates(subset=['start'])
-    # write_new_sheet(link, survey_worksheet_name, survey_data)
+    write_new_sheet(link, survey_worksheet_name, survey_data)

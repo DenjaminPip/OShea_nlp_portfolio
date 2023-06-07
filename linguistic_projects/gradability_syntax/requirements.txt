@@ -1,3 +1,7 @@
+matplotlib
+seaborn
 pandas
+scipy
+statistics
+re
 scikit-learn
-numpy
