@@ -1,8 +1,6 @@
-import random
 import unittest
 from make_survey_one import count_syllables, is_word_with_multiple_syllables, get_adjective_modifier, random_string, create_phrases
 from make_survey_two import write_new_prompt
-from analyze_survey_two_data import find_statistical_significance
 
 class SurveyOneTests(unittest.TestCase):
 

@@ -4,4 +4,4 @@ pandas
 scipy
 statistics
 re
-scikit-learn
+unittest
