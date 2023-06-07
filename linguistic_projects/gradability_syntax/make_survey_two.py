@@ -36,9 +36,8 @@ dependencies_file = os.path.join(module_path, "requirements.txt")
 check_dependencies(dependencies_file)
 
 import pandas as pd
-from google_drive import GoogleSheetsAPI, GoogleDriveAPI
 import random
-from make_survey_one import write_new_sheet, open_sheet, new_data
+from make_survey_one import open_sheet, new_data
 
 def write_new_prompt(noun: str, adjective_1: str, adjective_2: str) -> tuple:
     """

@@ -1,24 +1,38 @@
+| <strong>Portfolio Information</strong> | <strong>Details</strong> |
+| -------------------------------------- | ------- |
+| Language | Python |
+| Libraries Used | NLTK, spaCy, re(Regex), matplotlib, seaborn, pandas, scipy, numpy, scikit-learn|
+| Projects Count | 5 |
+| Author | Denny O'Shea |
+
+## Instructions for Running Python Notebooks Locally
+
+Many of these projects exist in Jupyter Notebooks that provide step-by-step explainations of my process. To download and read these files, the following steps are required:
+
+  1. Install dependencies using requirements.txt
+  2. Run notebooks as usual by using a Jupyter Notebook server, VSCode, etc.
+
 # Welcome to My GitHub Portfolio
 
 Hello and welcome to my GitHub portfolio! Here, you'll find a collection of my data analyst projects, showcasing my skills and experience in the field. While my focus is currently on data analysis, I'm actively working towards expanding into the realm of data science in the near future. I am passionate about the insights data provide and constantly strive to expand my skills.
 
-## Project Categories
+## Content
 
-### 1. Helpful Modules
+### Helpful Modules
 
-In the `helpful_modules` folder, you will find modules that I have written to streamline common tasks encountered during data analysis projects. These modules are designed to simplify processes such as extracting data saved in my Google Cloud account, enabling more efficient workflows. These modules are built with the goal of promoting code reuse and productivity.
+This folder contains simple modules and scripts meant to help automate the tasks I complete regularly. Namely, there is a work-in-progress module which I update regularly for helping me download and upload data to my Google Drive API. Most often, I use this to access data in a Google Sheet, but I am also working on adding Google Forms functionality as I often create repetitive surveys for my research projects and it would save time and money having an automated system I have written compared to converting a Google Sheet to a Form through software.
 
-### 2. Linguistic Projects
+### DataCamp Projects
 
-The `linguistic_projects` folder contains projects focused on linguistic analysis, aimed to help me complete my Masters in Linguistics at San Jose State University. Currently, you will find one project in this category, which involves setting up surveys to elicit syntactic variation in English as well as analyzing the output of the data. These projects demonstrate my interest in linguistics and how it intersects with data analysis. These projects highlight my interest in exploring language patterns and applying data analysis techniques to gain insights into linguistic phenomena. I aim to further expand this category with more exciting linguistic projects in the future.
+  - [Gender Prediction with Sound](https://github.com/DenjaminPip/portfolio/tree/main/datacamp_projects/gender_prediction_with_sound) In this guided project, the overall goal is to analyze the gender distribution of authors of best-selling children's picture books from 2008 to 2017 using NLP techniques. The project involves tasks such as fuzzy name matching to check if two strings sound the same, extracting phonetic equivalents of first names, determining the likely gender of names based on a dataset of baby names, and analyzing the gender distribution of authors over time. The project aims to uncover any changes in the gender representation of authors in the given time period.
+  - [Predicting Credit Care Approval](https://github.com/DenjaminPip/portfolio/tree/main/datacamp_projects/predicting_credit_card_approval) The overall goal of this guided project is to build an automatic credit card approval predictor using machine learning techniques. The project involves analyzing credit card applications, preprocessing the dataset, performing exploratory data analysis, and building a machine learning model to predict credit card approval. The dataset used is the Credit Card Approval dataset from the UCI Machine Learning Repository, and the project includes tasks such as loading and viewing the dataset, inspecting the applications, splitting the dataset into train and test sets, and handling missing values.
+  - [Word Frequency in Classic Novels](https://github.com/DenjaminPip/portfolio/tree/main/datacamp_projects/word_frequency_in_classic_novels) 
 
-### 3. DataCamp Projects
+### NLP Projects
+  - [Toxicity Report](https://github.com/DenjaminPip/portfolio/tree/main/nlp_projects/flagging_toxic_comments) The goal of this project was to build a program that can identify toxic or negative comments in a dataset of Wikipedia comments and flag them for review. The proposed method involved training a naïve Bayes classifier on a .csv file of comments, but due to computational constraints, the final approach utilized the scikit-learn library for multilabel classification. The steps included parsing and normalizing the data, vectorizing the text, training the classifier, testing its accuracy, and saving the predicted scores to a .csv file.
 
-In the `datacamp_projects` folder, you will find a diverse array of projects that I have completed while working on my DataCamp certifications. These projects cover a wide range of topics and methodologies, providing a comprehensive overview of my data analysis skills. Some of these projects are guided, allowing me to follow specific instructions and learn new concepts, while others are unguided, allowing me to showcase my ability to work independently and apply my knowledge to real-world datasets. I am eager to continue expanding my skill set through future DataCamp endeavors.
-
-## Future Direction
-
-While my current portfolio mainly focuses on data analysis, I am actively working towards expanding into the field of data science. I plan to incorporate more advanced machine learning projects, predictive modeling, and data-driven solutions into my portfolio. By continuously updating and expanding my projects, I aim to demonstrate my growth and expertise in the evolving field of data science.
+### Linguistics Projects
+  - [Predicting Prenominal Adjective Word Order based on Degrees of Gradability](https://github.com/DenjaminPip/portfolio/tree/main/linguistic_projects/gradability_syntax) In this project, I conducted two small-scale surveys designed to elicit degrees of subjectivity for both semantic and gradability categories. The ultimate goal of this research was to identify the degree to which subjectivity influences prenominal adjective order. Previous research suggests that prenominal adjective order preferences are determined by subjectivity with semantic categories falling within a spectrum. However, it has long been assumed that these semantic categories are highly structured and incapable of unmarked movement. This paper hypothesizes that if this is the case, perhaps a finer degree of subjectivity, that of gradability categories, may be influencing the syntactic structure.
 
 ## Connect with Me
 
