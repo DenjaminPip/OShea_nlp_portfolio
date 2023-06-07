@@ -50,32 +50,6 @@ class GoogleDriveAPI(GoogleAuthenticate):
         form = self.drive_service.files().create(body=form_metadata).execute()
         return form['id']
 
-class GoogleFormsAPI(GoogleAuthenticate):
-    def __init__(self):
-        """
-        Initializes the GoogleFormsAPI class for interacting with Google Forms API.
-        """
-        self.scopes = ['https://www.googleapis.com/auth/forms']
-        super().__init__()
-        self.forms_service = None
-        self.authenticate(self.scopes)
-        self.forms_service = build('forms', 'v1', credentials=self.credentials)
-
-    def create_form_from_data(self, form_id, form_data):
-        """
-        Creates a new form element in an existing Google Form.
-
-        :param form_id: str
-            ID of the Google Form.
-        :param form_data: list
-            List of form data containing question, question type, and options.
-        """
-        for row in form_data:
-            question, question_type, options = row
-            question_body = {'title': question, 'questionType': question_type, 'options': options}
-            # self.forms_service.forms().get(formId=form_id).execute()['elements'].append(question_body)
-            self.forms_service.forms().get(formId=form_id).execute()
-
 class GoogleSheetsAPI(GoogleAuthenticate):
     def __init__(self, url: str, worksheet_name='Sheet1'):
         """
