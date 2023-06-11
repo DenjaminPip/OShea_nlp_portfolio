@@ -1,7 +1,7 @@
 | <strong>Portfolio Information</strong> | <strong>Details</strong> |
 | -------------------------------------- | ------- |
 | Language | Python |
-| Libraries Used | NLTK, spaCy, re(Regex), matplotlib, seaborn, pandas, scipy, numpy, scikit-learn|
+| Libraries Used | NLTK, spaCy, re(Regex), matplotlib, seaborn, pandas, scipy, numpy, scikit-learn, Google API|
 | Projects Count | 5 |
 | Author | Denny O'Shea |
 
@@ -25,15 +25,27 @@ This folder contains simple modules and scripts I have written that are meant to
 <strong>Note</strong>: I regularly use these modules, so in order for some code to run efficiently on your machine, it may be necessary to download this folder as well.
 
 ### DataCamp Projects
-  - [Gender Prediction with Sound](https://github.com/DenjaminPip/portfolio/tree/main/datacamp_projects/gender_prediction_with_sound) | In this guided project, the overall goal is to analyze the gender distribution of authors of best-selling children's picture books from 2008 to 2017 using NLP techniques. The project involves tasks such as fuzzy name matching to check if two strings sound the same, extracting phonetic equivalents of first names, determining the likely gender of names based on a dataset of baby names, and analyzing the gender distribution of authors over time. The project aims to uncover any changes in the gender representation of authors in the given time period.
-  - [Predicting Credit Care Approval](https://github.com/DenjaminPip/portfolio/tree/main/datacamp_projects/predicting_credit_card_approval) | The overall goal of this guided project is to build an automatic credit card approval predictor using machine learning techniques. The project involves analyzing credit card applications, preprocessing the dataset, performing exploratory data analysis, and building a machine learning model to predict credit card approval. The dataset used is the Credit Card Approval dataset from the UCI Machine Learning Repository, and the project includes tasks such as loading and viewing the dataset, inspecting the applications, splitting the dataset into train and test sets, and handling missing values.
-  - [Word Frequency in Classic Novels](https://github.com/DenjaminPip/portfolio/tree/main/datacamp_projects/word_frequency_in_classic_novels) | 
+  - [Gender Prediction with Sound](https://github.com/DennyOShea/OShea_nlp_portfolio/tree/main/datacamp_projects/gender_prediction_with_sound) | In this guided project, the overall goal is to analyze the gender distribution of authors of best-selling children's picture books from 2008 to 2017 using NLP techniques. The project involves tasks such as fuzzy name matching to check if two strings sound the same, extracting phonetic equivalents of first names, determining the likely gender of names based on a dataset of baby names, and analyzing the gender distribution of authors over time. The project aims to uncover any changes in the gender representation of authors in the given time period.
+
+  <strong>Tools</strong>: fuzzy, pandas, Regex, numpy, matplotlib
+
+  - [Predicting Credit Care Approval](https://github.com/DennyOShea/OShea_nlp_portfolio/tree/main/datacamp_projects/predicting_credit_card_approval) | The overall goal of this guided project is to build an automatic credit card approval predictor using machine learning techniques. The project involves analyzing credit card applications, preprocessing the dataset, performing exploratory data analysis, and building a machine learning model to predict credit card approval. The dataset used is the Credit Card Approval dataset from the UCI Machine Learning Repository, and the project includes tasks such as loading and viewing the dataset, inspecting the applications, splitting the dataset into train and test sets, and handling missing values.
+
+  <strong>Tools</strong>: pandas, numpy, scikit-learn, logistic regression, grid search
+
+  - [Word Frequency in Classic Novels](https://github.com/DennyOShea/OShea_nlp_portfolio/tree/main/datacamp_projects/word_frequency_in_classic_novels) | This is an unguided project where I was tasked with identifying the 10 most frequent meaningful words within the text _Peter and Wendy_ by J.M. Barrie. Specifically, the project required simple Named Entity Recognition (NER) to find which of these 10 words were character names. The data was scraped from <a href="https://www.gutenberg.org/files/16/16-h/16-h.htm">Project Gutenberg</a>, cleaned and tokenized with both NLTK and spaCy.
+
+  <strong>Tools</strong>: NLTK, BeautifulSoup, spaCy, Regex
 
 ### NLP Projects
-  - [Toxicity Report](https://github.com/DenjaminPip/portfolio/tree/main/nlp_projects/flagging_toxic_comments) | The goal of this project was to build a program that can identify toxic or negative comments in a dataset of Wikipedia comments and flag them for review. The proposed method involved training a naïve Bayes classifier on a .csv file of comments, but due to computational constraints, the final approach utilized the scikit-learn library for multilabel classification. The steps included parsing and normalizing the data, vectorizing the text, training the classifier, testing its accuracy, and saving the predicted scores to a .csv file.
+  - [Toxicity Report](https://github.com/DennyOShea/OShea_nlp_portfolio/tree/main/nlp_projects/flagging_toxic_comments) | The goal of this project was to build a program that can identify toxic or negative comments in a dataset of Wikipedia comments and flag them for review. The proposed method involved training a naïve Bayes classifier on a .csv file of comments, but due to computational constraints, the final approach utilized the scikit-learn library for multilabel classification. The steps included parsing and normalizing the data, vectorizing the text, training the classifier, testing its accuracy, and saving the predicted scores to a .csv file.
+
+  <strong>Tools</strong>: scikit-learn, logistic regression, pandas, numpy, tfidf vectorization, Regex, json
 
 ### Linguistics Projects
-  - [Predicting Prenominal Adjective Word Order based on Degrees of Gradability](https://github.com/DenjaminPip/portfolio/tree/main/linguistic_projects/gradability_syntax) | In this project, I conducted two small-scale surveys designed to elicit degrees of subjectivity for both semantic and gradability categories. The ultimate goal of this research was to identify the degree to which subjectivity influences prenominal adjective order. Previous research suggests that prenominal adjective order preferences are determined by subjectivity with semantic categories falling within a spectrum. However, it has long been assumed that these semantic categories are highly structured and incapable of unmarked movement. This paper hypothesizes that if this is the case, perhaps a finer degree of subjectivity, that of gradability categories, may be influencing the syntactic structure.
+  - [Predicting Prenominal Adjective Word Order based on Degrees of Gradability](https://github.com/DennyOShea/OShea_nlp_portfolio/tree/main/linguistic_projects/gradability_syntax) | In this project, I conducted two small-scale surveys designed to elicit degrees of subjectivity for both semantic and gradability categories. The ultimate goal of this research was to identify the degree to which subjectivity influences prenominal adjective order. Previous research suggests that prenominal adjective order preferences are determined by subjectivity with semantic categories falling within a spectrum. However, it has long been assumed that these semantic categories are highly structured and incapable of unmarked movement. This paper hypothesizes that if this is the case, perhaps a finer degree of subjectivity, that of gradability categories, may be influencing the syntactic structure.
+
+  <strong>Tools</strong>: pandas, GoogleAPI, matplotlib, seaborn, scipy, statistics
 
 ## Connect with Me
 

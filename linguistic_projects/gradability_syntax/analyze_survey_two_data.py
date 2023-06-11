@@ -18,8 +18,11 @@ def get_scale_data(survey_data: pd.DataFrame, path: str = "data/word_order_resul
     plt.figure(figsize=(9, 7))
     # Calculate the mean preference ratings for each description
 
-    survey_data_averages = survey_data[['1', '2', '3', '4', '5']].mean()
-    survey_data_averages = pd.DataFrame({'Rating': survey_data_averages.index, 'Average': survey_data_averages.values})
+    survey_data_plot = survey_data['average_score']
+    averages = {i:0 for i in range(1,6)}
+    for score in list(survey_data_plot):
+        averages[score] += 1
+    survey_data_averages = {'Rating': [*range(1, 6)], 'Average': list(averages.values())}
 
     ax = sns.barplot(data=survey_data_averages,
                      x='Rating',
@@ -28,7 +31,7 @@ def get_scale_data(survey_data: pd.DataFrame, path: str = "data/word_order_resul
 
     ax.set_xticklabels(["Strong Preference\nfor Alternate", "Slight Preference\nfor Alternate",
                         "No Preference\nfor Either",
-                        "Slight Preference\nfor Scontras", "Strong Preference\nfor Scontras"])
+                        "Slight Preference\nfor Cinque", "Strong Preference\nfor Cinque"])
 
     plt.xlabel('Rating')
     plt.ylabel('Average Preference Rating')
